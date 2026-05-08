@@ -3,9 +3,12 @@
 
 $(document).ready(function() {
   AOS.init( {
-    // uncomment below for on-scroll animations to played only once
-    // once: true  
+    once: true,
+    duration: 650,
+    easing: 'ease-out-cubic'
   }); // initialize animate on scroll library
+
+  $('#year').text(new Date().getFullYear());
 });
 
 // Smooth scroll for links with hashes

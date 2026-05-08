@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:1.27-alpine
+    container_name: luisucan-portfolio
+    ports:
+      - "8881:80"
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+    restart: unless-stopped
